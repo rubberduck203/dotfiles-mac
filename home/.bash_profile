@@ -13,7 +13,8 @@ export HISTCONTROL=erasedups
 shopt -s histappend
 
 alias ll='ls -lah'
-source ~/.keys
+
+[ -f ~/.keys ] && source ~/.keys
 
 # bash completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
