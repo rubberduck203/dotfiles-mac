@@ -17,12 +17,12 @@ alias ll='ls -lah'
 [ -f ~/.keys ] && source ~/.keys
 
 # bash completion
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+[ -f /usr/local/etc/bash_completion ] && source /usr/local/etc/bash_completion
+[ -f /usr/local/etc/bash_completion.d/git-completion.bash ] && source /usr/local/etc/bash_completion.d/git-completion.bash
+[ -f /usr/local/etc/bash_completion.d/kubectl ] && source /usr/local/etc/bash_completion.d/kubectl
+[ -f /usr/local/etc/bash_completion.d/helm ] && source /usr/local/etc/bash_completion.d/helm
 
-if [ -f ~/.config/exercism/exercism_completion.bash ]; then
-  source ~/.config/exercism/exercism_completion.bash
-fi
-
-source /usr/local/etc/bash_completion.d/git-completion.bash
-source /usr/local/etc/bash_completion.d/kubectl
-source /usr/local/etc/bash_completion.d/helm
+# homeshick
+export HOMESHICK_DIR=/usr/local/opt/homeshick
+[ -f /usr/local/opt/homeshick/homeshick.sh ] && source /usr/local/opt/homeshick/homeshick.sh
+[ -f /usr/local/etc/bash_completion.d/homeshick-completion.bash ] && source /usr/local/etc/bash_completion.d/homeshick-completion.bash

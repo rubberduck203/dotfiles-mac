@@ -1,0 +1,15 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = Christopher McClellan
+#	email = rubberduck@Christophers-MacBook-Pro.local
+[user]
+	name = Christopher J. McClellan
+	email = cmcclellan@pillartechnology.com
+[alias]
+	fuckit = reset HEAD
+	update = commit --amend --no-edit
+	fix = !git add . && git commit --amend --no-edit
+	lg = log --color --graph --abbrev-commit --pretty=oneline
+[color]
+	ui = auto
