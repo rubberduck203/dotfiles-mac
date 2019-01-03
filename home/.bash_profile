@@ -14,15 +14,18 @@ shopt -s histappend
 
 alias ll='ls -lah'
 
-[ -f ~/.keys ] && source ~/.keys
+source_files=(
+~/.keys
+/usr/local/etc/bash_completion
+/usr/local/etc/bash_completion.d/git-completion.bash
+/usr/local/etc/bash_completion.d/helm
+/usr/local/opt/homeshick/homeshick.sh
+/usr/local/etc/bash_completion.d/homeshick-completion.bash
+)
 
-# bash completion
-[ -f /usr/local/etc/bash_completion ] && source /usr/local/etc/bash_completion
-[ -f /usr/local/etc/bash_completion.d/git-completion.bash ] && source /usr/local/etc/bash_completion.d/git-completion.bash
-[ -f /usr/local/etc/bash_completion.d/kubectl ] && source /usr/local/etc/bash_completion.d/kubectl
-[ -f /usr/local/etc/bash_completion.d/helm ] && source /usr/local/etc/bash_completion.d/helm
+for source_file in ${source_files[@]}; do
+  [ -f $source_file ] && source $source_file
+done
 
-# homeshick
+## homeshick
 export HOMESHICK_DIR=/usr/local/opt/homeshick
-[ -f /usr/local/opt/homeshick/homeshick.sh ] && source /usr/local/opt/homeshick/homeshick.sh
-[ -f /usr/local/etc/bash_completion.d/homeshick-completion.bash ] && source /usr/local/etc/bash_completion.d/homeshick-completion.bash
