@@ -9,7 +9,7 @@
 [alias]
 	fuckit = reset HEAD
 	update = commit --amend --no-edit
-	fix = !git add . && git commit --amend --no-edit
+	fix = !git add -A && git commit --amend --no-edit
 	lg = log --color --graph --abbrev-commit --pretty=oneline
 [color]
 	ui = auto
