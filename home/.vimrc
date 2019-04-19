@@ -7,4 +7,3 @@ set expandtab ts=4 sw=4 ai
 set backspace=indent,eol,start
 
 filetype plugin on
-execute pathogen#infect()
