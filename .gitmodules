@@ -1,6 +1,12 @@
 [submodule "home/.vim/pack/plugins/start/rust.vim"]
 	path = home/.vim/pack/plugins/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
+[submodule "home/.vim/pack/plugins/start/alchemist.vim"]
+	path = home/.vim/pack/plugins/start/alchemist.vim
+	url = https://github.com/slashmili/alchemist.vim.git
+[submodule "home/.vim/pack/my-packages/start/vim-elixir"]
+	path = home/.vim/pack/my-packages/start/vim-elixir
+	url = https://github.com/elixir-lang/vim-elixir.git
 [submodule "home/.posh-git-bash"]
 	path = home/.posh-git-bash
 	url = https://github.com/lyze/posh-git-sh.git
