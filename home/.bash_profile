@@ -14,6 +14,7 @@ export HISTCONTROL=erasedups
 shopt -s histappend
 
 alias ll='ls -lah'
+alias fsi='dotnet ~/bin/fsi.exe'
 
 source_files=(
 ~/.keys
