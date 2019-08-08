@@ -6,6 +6,7 @@ export CLICOLOR=1
 export PATH=$PATH:~/Library/Android/sdk/platform-tools
 export PATH=$PATH:~/Library/Android/sdk/emulator
 export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin/gcc-arm-none-eabi-8-2018-q4-major/bin
 
 export PATH="$HOME/.cargo/bin:$PATH"
 export WWW_HOME=https://duckduckgo.com/lite
