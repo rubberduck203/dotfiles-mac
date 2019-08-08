@@ -21,6 +21,7 @@ source_files=(
 /usr/local/etc/bash_completion.d/helm
 /usr/local/opt/homeshick/homeshick.sh
 /usr/local/etc/bash_completion.d/homeshick-completion.bash
+~/.posh-git-bash/git-prompt.sh
 )
 
 for source_file in ${source_files[@]}; do
@@ -29,3 +30,6 @@ done
 
 ## homeshick
 export HOMESHICK_DIR=/usr/local/opt/homeshick
+
+## posh-git
+PROMPT_COMMAND='__posh_git_ps1 "\u@\h:\w " "\\\$ ";'$PROMPT_COMMAND
