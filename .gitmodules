@@ -5,8 +5,11 @@
 	path = home/.vim/pack/plugins/start/alchemist.vim
 	url = https://github.com/slashmili/alchemist.vim.git
 [submodule "home/.vim/pack/my-packages/start/vim-elixir"]
-	path = home/.vim/pack/my-packages/start/vim-elixir
+	path = home/.vim/pack/plugins/start/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
 [submodule "home/.posh-git-bash"]
 	path = home/.posh-git-bash
 	url = https://github.com/lyze/posh-git-sh.git
+[submodule "home/.vim/pack/plugins/start/vim-racer"]
+	path = home/.vim/pack/plugins/start/vim-racer
+	url = https://github.com/racer-rust/vim-racer.git
