@@ -11,5 +11,6 @@
 	update = commit --amend --no-edit
 	fix = !git add -A && git commit --amend --no-edit
 	lg = log --color --graph --abbrev-commit --pretty=oneline
+    del-merged = !git branch --merged master | grep -v "master" | xargs git branch -d
 [color]
 	ui = auto
