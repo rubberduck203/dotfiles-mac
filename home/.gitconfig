@@ -5,7 +5,7 @@
 #	email = rubberduck@Christophers-MacBook-Pro.local
 [user]
 	name = Christopher J. McClellan
-	email = cmcclellan@pillartechnology.com
+	email = chris.mcclellan203@gmail.com
 [alias]
 	fuckit = reset HEAD
 	update = commit --amend --no-edit
